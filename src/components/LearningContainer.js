@@ -1,9 +1,5 @@
 import React from 'react';
 import './components-styles/LearningContainer.css'
-import FurtherLearning from './FurtherLearning'
-
-const ACTIVE = 'ACTIVE'
-const NOTACTIVE = 'NOTACTIVE'
 
 class LearningContainer extends React.Component {
   constructor(props) {
