@@ -1,0 +1,56 @@
+@-webkit-keyframes color-change-5x {
+  0% {
+    background: #CDB4DB;
+  }
+
+  25% {
+    background: #FFC8DD;
+  }
+
+  50% {
+    background: #FFAFCC;
+  }
+
+  75% {
+    background: #BDE0FE;
+  }
+
+  100% {
+    background: #A2D2FF;
+  }
+}
+
+@keyframes color-change-5x {
+  0% {
+    background: #CDB4DB;
+  }
+
+  25% {
+    background: #FFC8DD;
+  }
+
+  50% {
+    background: #FFAFCC;
+  }
+
+  75% {
+    background: #BDE0FE;
+  }
+
+  100% {
+    background: #A2D2FF;
+  }
+}
+
+
+.siteBody {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  min-height: 100vh;
+  -webkit-animation: color-change-5x 60s infinite alternate both;
+  animation: color-change-5x 60s infinite alternate both;
+  padding: 8px;
+}
