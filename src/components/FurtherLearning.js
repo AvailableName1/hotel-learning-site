@@ -27,17 +27,19 @@ class FurtherLearning extends React.Component {
                     Сейчас ты увидишь пример.</p>
                 <button onClick={this.props.handler} style={{ padding: 8 + 'px' }} type='button'>Увидеть пример</button>
                 <hr></hr>
-                <p>Полезные фразы на иврите:</p>
-                <ul>
-                    <li>Hetkasher le menachel<br />
-                        Позвоните менеджеру.</li>
-                    <li>Ata/at mhake le Andrey/Nikita?<br />
-                        Вы ждете Андрея/Никиту?</li>
-                    <li>Mehakim leka sham<br />
-                        Вас там встретят.</li>
-                    <li>Toda, bevaqasha, sliha<br />
-                        Спасибо, пожалуйста, извините.</li>
-                </ul>
+                <div className='additionalPhrases'>
+                    <p>Полезные фразы на иврите:</p>
+                    <ul>
+                        <li>Hetkasher le menachel<br />
+                            Позвоните менеджеру.</li>
+                        <li>Ata/at mhake le Andrey/Nikita?<br />
+                            Вы ждете Андрея/Никиту?</li>
+                        <li>Mehakim leka sham<br />
+                            Вас там встретят.</li>
+                        <li>Toda, bevaqasha, sliha<br />
+                            Спасибо, пожалуйста, извините.</li>
+                    </ul>
+                </div>
             </div>
         )
     }
