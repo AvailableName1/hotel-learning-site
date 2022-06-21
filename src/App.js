@@ -148,8 +148,8 @@ class App extends React.Component {
     return (
       <div className='siteBody'>
         {this.state.componentRendered === 1 && <LearningContainer handler={this.handlePreNextClick} />}
-        {this.state.componentRendered === 2 && <FurtherLearning handler={this.handleFinalClick} />}
-        {this.state.componentRendered === 3 && <OrderMessageExplanation messageList={ORDERS_DATA} handler={this.handleBackToStartClick} />}
+        {this.state.componentRendered === 2 && <FurtherLearning handler={this.handleFinalClick} handlerBack={this.handleBackToStartClick} />}
+        {this.state.componentRendered === 3 && <OrderMessageExplanation messageList={ORDERS_DATA} handler={this.handleBackToStartClick} handlerBack={this.handlePreNextClick} />}
       </div>
     )
   }

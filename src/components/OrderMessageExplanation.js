@@ -42,6 +42,9 @@ class OrderMessageExplanation extends React.Component {
                 {this.state.messageListPosition < this.props.messageList.length && this.state.messageListPosition >= 1 &&
                     <button onClick={this.handlePreviousMessage} type='button' style={{ padding: 8 + 'px', marginLeft: `${2.5}em` }}>Назад</button>
                 }
+                {this.state.messageListPosition === 0 &&
+                    <button onClick={this.props.handlerBack} type='button' style={{ padding: 8 + 'px', marginLeft: `${2.5}em` }}>Назад</button>
+                }
                 {this.state.messageListPosition >= this.props.messageList.length &&
                     <div className='LearningContainer' style={{ marginTop: `${1}em` }}>
                         <h4>На этом все</h4>
